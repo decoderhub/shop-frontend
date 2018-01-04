@@ -203,6 +203,13 @@ p {
     position: relative;
 }
 
+.main-header .icon-nav .nav-item > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+} 
+
 .main-header .icon-nav .nav-item.dropdown ul {
     position: absolute;
     list-style: none;
@@ -221,7 +228,7 @@ p {
     display: none;
 }
 
-.main-header .icon-nav .nav-item.dropdown ul li {
+.main-header .icon-nav .nav-item.dropdown ul a {
     margin: 0;
     display: block;
     width: 120px;
