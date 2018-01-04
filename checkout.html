@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Red Gingger | The Modern Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-top">
+            <div class="left">
+                <p>The Modern Shop</p>
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="logo">
+                <a href="/">RedGingger</a>
+            </div>
+            <div class="search-form">
+                <form action="/search">
+                    <input type="text" name="keyword" id="searchtextbox" placeholder="Search for products">
+                    <button type="submit" id="searchsubmit">Search</button>
+                </form>
+            </div>
+            <div class="icon-nav">
+                <a href="cart.html" class="nav-item">
+                    <span>Cart</span>
+                    <i class="material-icons">&#xE8CC;</i>
+                </a>
+                <a href="#user" class="nav-item dropdown">
+                    <span>Sign In</span>
+                    <i class="material-icons">&#xE853;</i>
+                    <ul>
+                        <li>Sign In</li>
+                        <li>Sign Up</li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="checkout container">
+            <div class="card">
+                <div class="left">
+                    <p>Enter Your Address</p>
+                    <form action="/" class="form">
+                        <div class="field">
+                            <input type="text" name="fullname" placeholder="Full Name">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="hostelname" placeholder="Hostel Name">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="mobileno" placeholder="Mobile No.">
+                        </div>
+                        <hr>
+                        <p>Payment Option</p>
+                        <div class="field radio">
+                            <input type="radio" name="pay" id="" value="Cash On Delivery" checked> Cash On Delivery
+                        </div>
+                        <hr>
+                        <button type="submit" class="btn">Place Your Order</button>
+                    </form>
+                </div>
+                <div class="right">
+                    <p>Cart Summary</p>
+                    <table>
+                        <thead>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </thead>
+                        <tfoot>
+                            <td colspan="2">Subtotal</td>
+                            <td>Rs. 4999</td>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>The Kala Chasma</td>
+                                <td>5</td>
+                                <td>Rs. 4999</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="left">
+            Copyright &copy;
+            <script>
+                var dt = new Date();
+                document.write(dt.getFullYear());
+            </script> RedGingger. All rights reserved
+        </div>
+        <div class="right">
+            <span> Made with </span>
+            <i class="material-icons">favorite</i>
+            <span> in India.</span>
+        </div>
+    </footer>
+</body>
+
+</html>
